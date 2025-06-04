@@ -6,6 +6,7 @@ app = Flask(__name__)
 # 自己紹介ページへのリンク情報
 PROFILE_LINKS = {
     "sample_user": "サンプルユーザー",
+    "otamesi": "テスト版",
     "rei_shishido": "宍戸"  # ← 拡張子「.html」はキーに含めないよう統一した方がよい
 }
 
