@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+</head>
+<body>
+    <h1>自己紹介ページへようこそ！</h1>
+    <p>見たい人の名前を選んでください:</p>
+    <ul>
+        {% for filename, display_name in profile_links.items() %}
+        <li><a href="/profiles/{{ filename }}">{{ display_name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
