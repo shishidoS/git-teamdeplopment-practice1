@@ -5,37 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>シシドの自己紹介</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
-        h1 { color: #333; }
-        p { margin-bottom: 10px; }
-        ul { list-style-type: disc; margin-left: 20px; }
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #00ffe7;
+            padding: 40px;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            color: #00ffe7;
+            text-shadow: 0 0 10px #00ffe7;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #c3fafa;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        a {
+            color: #00ffe7;
+            text-decoration: none;
+            border: 2px solid #00ffe7;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 0 10px #00ffe7;
+        }
+
+        a:hover {
+            background-color: #00ffe7;
+            color: #0f0f0f;
+            box-shadow: 0 0 20px #00ffe7;
+        }
+
+        .glow-box {
+            background: rgba(0, 255, 231, 0.05);
+            border: 1px solid #00ffe7;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ffe7;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #00ffe7; }
+            50% { box-shadow: 0 0 20px #00ffe7; }
+            100% { box-shadow: 0 0 10px #00ffe7; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    <h1>こんにちは、シシドショウタです！</h1>
-    <p>はじめまして。趣味はウェブ開発と海外の映画・ドラマ鑑賞です。</p>
-    <p>最近はReactを勉強しています。健康診断が終わり食べ飲み放題です</p>
+    <div class="glow-box">
+        <h1>こんにちは、シシドショウタです！</h1>
+        <p>はじめまして。趣味は <strong>ウェブ開発</strong> と <strong>海外の映画・ドラマ鑑賞</strong> です。</p>
+        <p>最近は <strong>React</strong> を勉強中！<br>健康診断が終わり、食べ飲み放題を解禁しました🍣🍻</p>
+    </div>
 
-    <h2>技術スタック</h2>
-<ul>
-<li>言語・フレームワーク: Python(Django), Ruby on Rails, PHP, HTML/CSS, JavaScript(React), SQL</li>
-<li>インフラ: AWS(EC2), GCP, PythonAnywhere</li>
-<li>その他: SQLite, Node-RED, IoTシステム開発, 音声・顔認識技術</li>
-</ul>
+    <div class="glow-box">
+        <h2>技術スタック</h2>
+        <ul>
+            <li>言語・フレームワーク: Python(Django), Ruby on Rails, PHP, HTML/CSS, JavaScript(React), SQL</li>
+            <li>インフラ: AWS(EC2), GCP, PythonAnywhere</li>
+            <li>その他: SQLite, Node-RED, IoTシステム開発, 音声・顔認識技術</li>
+        </ul>
+    </div>
 
-<h2>インターン経験</h2>
-<ul>
-<li>DMM WEBCAMP - プログラミングメンター（2025年3月～現在）
-    - HTML, CSS, Ruby, Rails, Git, AWSの技術サポート</li>
-<li>株式会社エクストランス（2025年1月～2月）
-    - 自社製品「X-MON」の開発、PHP・JavaScript開発</li>
-<li>株式会社LIRIS（2024年5月～10月）
-    - 社内業務管理ツールの開発・デバッグ</li>
-<li>株式会社CMC（2024年8月）
-    - Ruby on RailsによるWebアプリケーション開発</li>
-</ul>
+    <div class="glow-box">
+        <h2>インターン経験</h2>
+        <ul>
+            <li>DMM WEBCAMP - プログラミングメンター（2025年3月～現在）
+                <br>HTML, CSS, Ruby, Rails, Git, AWSの技術サポート</li>
+            <li>株式会社エクストランス（2025年1月～2月）
+                <br>自社製品「X-MON」の開発、PHP・JavaScript開発</li>
+            <li>株式会社LIRIS（2024年5月～10月）
+                <br>社内業務管理ツールの開発・デバッグ</li>
+            <li>株式会社CMC（2024年8月）
+                <br>Ruby on RailsによるWebアプリケーション開発</li>
+        </ul>
+    </div>
 
-
-    <p><a href="/">トップページに戻る</a></p>
+    <a href="/">トップページに戻る</a>
 </body>
 </html>
