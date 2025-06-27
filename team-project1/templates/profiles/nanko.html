@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なんこーの自己紹介</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Zen Dots', sans-serif;
+        color: #fff;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        background-size: 400% 400%;
+        animation: bgMove 15s ease infinite;
+        padding: 40px;
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    }
+
+    @keyframes bgMove {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 2em;
+        color: #ff00ff;
+        text-align: center;
+        margin-bottom: 30px;
+        animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+        0% {opacity: 1;}
+        50% {opacity: 0.6;}
+        100% {opacity: 1;}
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        line-height: 1.8;
+        background: linear-gradient(90deg, #00ffff, #ff00ff, #ffff00);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 5s linear infinite;
+    }
+
+    @keyframes shine {
+        0% {background-position: 0%;}
+        100% {background-position: 200%;}
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #00ffcc;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #00ffff;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        padding: 10px;
+        margin: 5px 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 5px solid #ff00ff;
+        transition: all 0.3s ease;
+    }
+
+    li:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+    }
+
+    a {
+        color: #ffff00;
+        text-decoration: none;
+        border-bottom: 2px dashed #ffff00;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #00ffff;
+        border-bottom: 2px solid #00ffff;
+    }
+    </style>
+</head>
+<body>
+    <h1>🌈こんにちは、南口遼河です！🌈</h1>
+
+    <p>はじめまして。普段は大学生とボードゲームバー店員をしています。趣味は囲碁です。</p>
+    <p>最近は耳かきにハマっています。</p>
+
+    <h2>私の好きなもの</h2>
+    <ul>
+        <li>舐達麻</li>
+        <li>MOROHA</li>
+        <li>RIP SLYME</li>
+    </ul>
+
+    <p><a href="/">💫 トップページに戻る 💫</a></p>
+</body>
+</html>
