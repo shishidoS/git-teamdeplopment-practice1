@@ -1,0 +1,286 @@
+<!-- 
+  -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>◆ ERROR: 布施寛和_データ破損.exe ◆</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&family=Permanent+Marker&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        /* カオスなデザインの基本設定 */
+        body {
+            font-family: 'DotGothic16', monospace; /* 基本はドット絵フォント */
+            line-height: 1.2; /* 行間は詰める */
+            margin: 0;
+            background: 
+                repeating-linear-gradient(45deg, #FF0000 0px, #FF0000 5px, #00FF00 5px, #00FF00 10px), /* 赤と緑のストライプ */
+                linear-gradient(180deg, #000000, #330033); /* 黒と紫のグラデーション */
+            background-blend-mode: multiply; /* 背景を重ねて奇妙な色に */
+            color: #FFFF00; /* 警告色の黄色 */
+            overflow: hidden; /* あえてスクロールバーを消すことで閉じ込められた感を出す */
+            cursor: crosshair; /* 照準カーソル */
+            text-shadow: 1px 1px 0px #FF00FF; /* マゼンタの影 */
+            animation: glitchBackground 0.8s infinite alternate; /* 背景のグリッチアニメーション */
+        }
+
+        @keyframes glitchBackground {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 10% 5%; }
+        }
+
+        /* 全体コンテナ */
+        .glitch-container {
+            position: relative;
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* 要素がはみ出したら折り返す */
+            perspective: 1000px; /* 3D効果 */
+        }
+
+        /* 各コンテンツブロック */
+        .content-block {
+            background-color: rgba(255, 0, 255, 0.4); /* 半透明マゼンタ */
+            border: 3px dashed #00FFFF; /* シアンの破線 */
+            box-shadow: 0 0 20px #FF00FF, inset 0 0 10px #00FFFF; /* 強烈な光る影 */
+            padding: 30px;
+            margin: 20px;
+            max-width: 500px;
+            width: 80%;
+            position: absolute; /* 絶対配置でランダム感を出す */
+            animation: 
+                moveRotate 10s infinite linear, 
+                glitchText 0.5s infinite alternate; /* 動きと文字のグリッチ */
+            transform-style: preserve-3d; /* 3D変換を保持 */
+            text-align: left;
+            overflow: hidden; /* はみ出しを隠す */
+            z-index: 10; /* 重なり順 */
+            box-sizing: border-box;
+        }
+
+        /* 複数ブロックの配置とアニメーションのバリエーション */
+        .content-block:nth-child(1) { top: 10%; left: 5%; transform: rotateX(15deg) rotateY(-10deg) translateZ(50px); animation-delay: 0s; }
+        .content-block:nth-child(2) { bottom: 5%; right: 10%; transform: rotateX(-10deg) rotateY(20deg) translateZ(30px); animation-delay: 2s; }
+        .content-block:nth-child(3) { top: 40%; right: 5%; transform: rotateZ(5deg) scale(0.9) translateZ(70px); animation-delay: 4s; }
+        .content-block:nth-child(4) { bottom: 15%; left: 15%; transform: rotateX(5deg) scale(1.1) translateZ(20px); animation-delay: 6s; }
+
+        @keyframes moveRotate {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            25% { transform: translate(10px, -5px) rotate(2deg) scale(1.02); }
+            50% { transform: translate(-10px, 10px) rotate(-3deg) scale(0.98); }
+            75% { transform: translate(5px, -10px) rotate(1deg) scale(1.01); }
+            100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+        }
+
+        /* グリッチアニメーション */
+        @keyframes glitchText {
+            0% { text-shadow: 1px 1px 0px #FF00FF; }
+            30% { text-shadow: -1px -1px 0px #00FFFF; transform: translateX(2px); }
+            60% { text-shadow: 2px -2px 0px #FF00FF; transform: translateX(-2px); }
+            100% { text-shadow: -2px 2px 0px #00FFFF; }
+        }
+
+        /* タイトル */
+        h1 {
+            font-family: 'Creepster', cursive; /* 恐ろしいフォント */
+            color: #FF0000; /* 警告の赤 */
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 5px 5px 0px #00FF00, -5px -5px 0px #0000FF; /* 複数の影でグリッチ感を強調 */
+            letter-spacing: 5px;
+            word-break: break-all; /* はみ出しを防ぐ */
+        }
+
+        /* サブタイトル */
+        h2 {
+            font-family: 'Press Start 2P', cursive; /* レトロゲーム風フォント */
+            color: #00FFFF; /* シアン */
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #FF00FF; /* マゼンタの線 */
+            padding-bottom: 5px;
+            text-shadow: 1px 1px 0px #FF0000;
+        }
+
+        /* 段落 */
+        p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #FFD700; /* ゴールド */
+            text-align: justify; /* 両端揃え */
+        }
+
+        /* リスト */
+        ul {
+            list-style-type: none; /* マーカーなし */
+            padding-left: 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            color: #ADFF2F; /* 黄緑 */
+            font-weight: bold;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        /* カスタム箇条書きアイコン (ランダムな記号) */
+        ul li::before {
+            content: '♦'; /* ダイヤ */
+            position: absolute;
+            left: 0;
+            color: #FF4500; /* オレンジレッド */
+            font-size: 1.2em;
+            top: 0;
+            animation: flicker 0.2s infinite alternate; /* チラつきアニメーション */
+        }
+
+        ul li:nth-child(2)::before { content: '§'; animation-delay: 0.05s; } /* セクション記号 */
+        ul li:nth-child(3)::before { content: '▙'; animation-delay: 0.1s; } /* シェードブロック */
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* リンク */
+        a {
+            color: #FF0000; /* 警告の赤 */
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #FF00FF; /* マゼンタの枠 */
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: transform 0.1s linear, background-color 0.1s linear;
+        }
+
+        a:hover {
+            background-color: #00FFFF; /* ホバーでシアン */
+            color: #000000; /* 黒字に */
+            transform: skewX(-10deg); /* 傾く */
+        }
+
+        /* 警告メッセージやノイズ */
+        .warning-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8rvPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5QgXFjsP/yvF2wAAABl0RVh0Q29tbWVudABDcmVhdGVlZCB3aXRoIEdJTVQvcfaeBAAAADZJREFUGBljYGBgYLsA4r+B/0eMDD9ABgYGwIAAAAP//AwAFnQEb6yJjWgAAAABJRU5ErkJggg=='); /* ノイズ画像 */
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 1;
+            animation: noise 0.2s infinite alternate;
+        }
+
+        @keyframes noise {
+            0% { background-position: 0 0; }
+            100% { background-position: 10% 10%; }
+        }
+
+        .alert-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            background-color: rgba(255, 255, 0, 0.8); /* 黄色い半透明背景 */
+            color: #FF0000; /* 赤文字 */
+            padding: 20px 30px;
+            border: 5px double #000000; /* 黒い二重線 */
+            font-family: 'Permanent Marker', cursive; /* 落書き風フォント */
+            font-size: 3em;
+            z-index: 100;
+            white-space: nowrap; /* 改行しない */
+            animation: blink 1s infinite alternate; /* 点滅 */
+            pointer-events: none;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        /* ランダムな位置に表示される警告テキスト */
+        .random-text {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.1); /* 薄い白 */
+            font-size: 0.8em;
+            pointer-events: none;
+            z-index: 0;
+            white-space: nowrap;
+            animation: randomMove 15s infinite linear;
+        }
+
+        /* random-textのランダムな位置とアニメーションディレイ */
+        .random-text:nth-child(1) { top: 5%; left: 20%; content: 'SYSTEM OVERLOAD'; animation-delay: 0s; }
+        .random-text:nth-child(2) { top: 20%; right: 10%; content: 'DATA CORRUPTION'; animation-delay: 3s; }
+        .random-text:nth-child(3) { bottom: 10%; left: 30%; content: 'ACCESS DENIED'; animation-delay: 6s; }
+        .random-text:nth-child(4) { top: 70%; right: 25%; content: 'GLITCHING...'; animation-delay: 9s; }
+        .random-text:nth-child(5) { top: 30%; left: 45%; content: 'UNSTABLE'; animation-delay: 12s; }
+        .random-text:nth-child(6) { bottom: 5%; left: 5%; content: '404 NOT FOUND'; animation-delay: 15s; }
+
+        @keyframes randomMove {
+            0% { transform: translate(0, 0); opacity: 0.1; }
+            25% { transform: translate(5px, 5px); opacity: 0.15; }
+            50% { transform: translate(-5px, -5px); opacity: 0.1; }
+            75% { transform: translate(5px, -5px); opacity: 0.15; }
+            100% { transform: translate(0, 0); opacity: 0.1; }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="warning-overlay"></div>
+    <div class="alert-message">!! WARNING !!</div>
+
+    <div class="random-text">SYSTEM OVERLOAD</div>
+    <div class="random-text">DATA CORRUPTION</div>
+    <div class="random-text">ACCESS DENIED</div>
+    <div class="random-text">GLITCHING...</div>
+    <div class="random-text">UNSTABLE</div>
+    <div class="random-text">404 NOT FOUND</div>
+
+    <div class="glitch-container">
+        <div class="content-block">
+            <h1><span style="color:#00FF00;">ER_R0R_404</span><br>布施寛和_FILE_LOST<span style="color:#FF0000;">!</span></h1>
+            <p><span style="color:#FF00FF;">INITIATE</span>:自我プロトコル。アクセス中...<span style="color:#00FFFF;">ノイズ発生</span>。通常、学生として動作中。趣味は存在しないデータパケット「アニメ」の破損解析。</p>
+            <p>現在の活動:「ガンダム」系列のデータ群に異常値検出。パターン認識に失敗。予測不能な事象が発生中！</p>
+            <p><a href="/">:: REBOOT SYSTEM ::</a></p>
+        </div>
+
+        <div class="content-block">
+            <h2><span style="color:#FF0000;">ERROR_LIST</span>:ガンダムデータ破損</h2>
+            <ul>
+                <li>[データ1]:機動戦士ガンダム → <span style="text-decoration: line-through;">アムロ</span>_データ不明</li>
+                <li>[データ2]:ガンダムSEED → <span style="text-decoration: line-through;">キラ</span>_データ破損</li>
+                <li>[データ3]:水星の魔女 → <span style="text-decoration: line-through;">スレッタ</span>_認識不可</li>
+            </ul>
+        </div>
+        
+        <div class="content-block">
+            <h2><span style="color:#FF0000;">WARNING</span>:未知の信号</h2>
+            <p>本データは不安定です。アクセスを試みないでください。<br>不明なアクセス元: <span style="color:#ADFF2F;">[IPアドレス検出不能]</span></p>
+            <p>最終更新: [日時] - <span style="color:#FF00FF;">データ不整合</span></p>
+        </div>
+
+        <div class="content-block">
+            <h2><span style="color:#FF0000;">LOOP</span>:情報過負荷</h2>
+            <p><span>></span> 再試行中... 再試行中... 再試行中...</p>
+            <p><span>></span> 不明なエラーコード: <span style="color:#FFD700;">[0xDEADBEEF]</span></p>
+            <p><span>></span> プロセス終了... 失敗</p>
+        </div>
+
+    </div>
+</body>
+</html>
