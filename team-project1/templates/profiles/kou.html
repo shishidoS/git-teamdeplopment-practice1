@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私の自己紹介 - Soccer Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 全体のデザインを設定する部分です */
+        body {
+            font-family: 'Oswald', sans-serif; /* サッカー風フォント指定 */
+            line-height: 1.7; /* 行間の設定 */
+            /* 背景に芝生の画像を設定 */
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/grass.png');
+            margin: 0;
+            padding: 40px;
+            color: #333; /* 文字色 */
+        }
+
+        /* 全体を囲むカードのデザイン */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9); /* 少し透明な白 */
+            padding: 20px 40px;
+            border-radius: 10px; /* 角を丸くする */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* 影をつける */
+            border: 3px solid #fff;
+        }
+
+        /* タイトルのデザインを設定する部分です */
+        h1, h2 {
+            color: #1a1a1a; /* タイトルの文字色（黒） */
+            text-align: center; /* 中央揃え */
+            text-transform: uppercase; /* 大文字に変換 */
+            border-bottom: 4px solid #333; /* スコアボードのような下線 */
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-weight: 700; /* 太字 */
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom-width: 2px; /* h1より少し細い線 */
+        }
+
+        /* 段落のデザインを設定する部分です */
+        p {
+            margin-bottom: 15px; /* 段落の下の余白 */
+            font-size: 1.1em;
+        }
+
+        /* 箇条書きリストのデザインを設定する部分です */
+        ul {
+            list-style-type: none; /* デフォルトの点を消す */
+            padding-left: 0; /* 左側の余白をなくす */
+        }
+
+        /* 各リスト項目の前にサッカーボールを表示 */
+        li::before {
+            content: '⚽'; /* サッカーボールの絵文字 */
+            margin-right: 10px;
+        }
+        
+        li {
+            font-size: 1.2em;
+            padding: 5px 0;
+        }
+
+        /* リンクのデザインを設定する部分です */
+        .link-button-wrapper {
+            text-align: center; /* ボタンを中央に配置 */
+            margin-top: 40px;
+        }
+
+        a {
+            background-color: #007bff; /* ボタンの背景色 */
+            color: #ffffff; /* リンクの文字色 */
+            text-decoration: none; /* リンクの下線を消す */
+            padding: 12px 25px; /* ボタンの余白 */
+            border-radius: 5px; /* 角を丸める */
+            font-weight: 700; /* 太字 */
+            text-transform: uppercase;
+            display: inline-block; /* ブロック要素として扱い、余白を適用 */
+            transition: background-color 0.3s ease; /* 色が変わるアニメーション */
+        }
+        
+        /* マウスを乗せたときに背景色を濃くする */
+        a:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>こんにちは、平野航成です！</h1>
+        
+        <p>はじめまして。普段は大学生をしています。趣味はサッカー観戦・音楽を聴くこと・ゲームです。</p>
+        <p>最近はプログラミングの勉強・サッカーのビジネスプランを考えることにハマっています。</p>
+
+        <h2>My Favorites</h2>
+        <ul>
+            <li>サッカー</li>
+            <li>B'z</li>
+            <li>アニメ</li>
+        </ul>
+
+        <div class="link-button-wrapper">
+            <a href="/">トップページに戻る</a>
+        </div>
+    </div>
+
+</body>
+</html>
