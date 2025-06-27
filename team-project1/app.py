@@ -1,12 +1,15 @@
 from flask import Flask, render_template
 from pathlib import Path  # ← これを追加
+import os
+print("現在の作業ディレクトリ:", os.getcwd())
 
 app = Flask(__name__)
 
 # 自己紹介ページへのリンク情報
 PROFILE_LINKS = {
     "sample_user": "サンプルユーザー",
-    "rei_shishido": "宍戸"  # ← 拡張子「.html」はキーに含めないよう統一した方がよい
+    "rei_shishido": "宍戸",  # ← 拡張子「.html」はキーに含めないよう統一した方がよい
+    "ikedo": "ikedo0127",
 }
 
 @app.route("/")
